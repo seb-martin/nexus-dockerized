@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 FROM dockerfile/java:oracle-java8
 
 MAINTAINER Sébastien Martin <seb.martin.94@gmail.com>
@@ -19,14 +18,3 @@ ADD ./conf/nexus.properties /usr/local/nexus/conf/nexus.properties
 EXPOSE 80
 
 CMD ["./bin/nexus", "console"]
-=======
-FROM dockerfile/java:oracle-java8
-
-MAINTAINER Sébastien Martin <seb.martin.94@gmail.com>
-
-RUN wget http://download.jetbrains.com/charisma/youtrack-5.2.5-8823.jar -O youtrack.jar
-
-EXPOSE 80
-
-CMD ["java", "-Xmx512m", "-Djava.awt.headless=true", "-jar", "youtrack.jar", "80"]
->>>>>>> a78f108f4f308092fdfc5da400469aed294e9b74
