@@ -4,10 +4,10 @@ MAINTAINER Sébastien Martin <seb.martin.94@gmail.com>
 
 WORKDIR /usr/local
 
-RUN wget http://www.sonatype.org/downloads/nexus-2.9.1-bundle.tar.gz -O nexus-bundle.tar.gz &&\
+RUN wget http://download.sonatype.com/nexus/oss/nexus-2.10.0-02-bundle.tar.gz -O nexus-bundle.tar.gz &&\
  tar xvzf nexus-bundle.tar.gz &&\
  rm -f nexus-bundle.tar.gz &&\
- ln -s nexus-2.9.1* nexus
+ ln -s nexus-2.10.0* nexus
 
 WORKDIR /usr/local/nexus
 
